@@ -11,7 +11,7 @@ close all force
 
 figure(14)
 [X, Y] = meshgrid(0.1:0.245:5, -pi:pi/10:pi);
-Z = sin(X * Y) ./ X;
+Z = sin(X .* Y) ./ X;
 subplot(2, 2, 1);
 surf(X, Y, Z);
 subplot(2, 2, 2);
